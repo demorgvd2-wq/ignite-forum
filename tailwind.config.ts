@@ -8,10 +8,29 @@ const config: Config = {
         responsive: 'min(75vw, 90rem)',
       },
       boxShadow: {
-        card: '10px 10px 0px 0px #7E7FE7',
-        button: '4px 4px 0px 0px #000000',
+        card: '0 8px 32px rgba(0, 217, 255, 0.1)',
+        button: '0 4px 12px rgba(0, 217, 255, 0.2)',
+        glow: '0 0 20px rgba(0, 217, 255, 0.3)',
+      },
+      backgroundImage: {
+        'gradient-cyan': 'linear-gradient(135deg, #00D9FF 0%, #0099CC 100%)',
+        'gradient-purple': 'linear-gradient(135deg, #A78BFA 0%, #7C3AED 100%)',
       },
       colors: {
+        background: '#0B0E27',
+        surface: '#1A1F3A',
+        'surface-light': '#252B48',
+        foreground: '#F9FAFB',
+        'text-secondary': '#9CA3AF',
+        primary: '#00D9FF',
+        'primary-dark': '#0099CC',
+        secondary: '#A78BFA',
+        accent: '#00D9FF',
+        'accent-purple': '#A78BFA',
+        success: '#10B981',
+        warning: '#F59E0B',
+        error: '#EF4444',
+        // Legacy colors for backward compatibility
         grey: '#1F2937',
         white: '#F9FAFB',
         orange: '#FF6B35',
@@ -21,9 +40,6 @@ const config: Config = {
       screens: {
         xs: '300px',
         smr: '480px',
-        // There was a mysterious break point around 1169px in HeaderClient.tsx,
-        // so a custom breakpoint was created to overwrite it
-        // and now a CSS pattern can be applied with this breakpoint.
         'md-lg': '1169px',
         'lg-xl': '1300px',
       },

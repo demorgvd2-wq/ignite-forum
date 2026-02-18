@@ -3,18 +3,63 @@ import Link from './Link';
 
 export default function Footer() {
     return (
-        <footer className="relative z-0 pt-8 md:pt-12">
-            <div className="relative bottom-4 mx-auto flex w-responsive flex-col border-t-2 border-white py-4 transition-all duration-500 md:flex-row md:items-center md:justify-between md:pb-8">
-                <div className="order-2 mb-4 text-center md:order-1 md:mb-0 md:text-left">
-                    <p>
-                        &copy; {new Date().getFullYear()} Adelaide University Computer Science Club.
-                    </p>
+        <footer className="relative z-0 pt-12 md:pt-16 mt-20">
+            <div className="relative mx-auto w-responsive">
+                {/* Top border with gradient */}
+                <div className="h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent mb-12" />
+                
+                <div className="flex flex-col md:flex-row justify-between items-start gap-12 pb-8">
+                    {/* Brand & Description */}
+                    <div className="flex-1">
+                        <h3 className="text-2xl font-bold mb-4">
+                            <span className="bg-gradient-cyan bg-clip-text text-transparent">Ignite</span>
+                            <span className="text-accent ml-1">Forum</span>
+                        </h3>
+                        <p className="text-text-secondary mb-6 max-w-md">
+                            A technical community at St Vincent College of Engineering and Technology, Nagpur. Uniting passionate engineers and innovators.
+                        </p>
+                    </div>
+
+                    {/* Quick Links */}
+                    <div>
+                        <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
+                        <nav className="space-y-2">
+                            <a href="/" className="text-text-secondary hover:text-accent transition-colors">Home</a>
+                            <a href="/about" className="text-text-secondary hover:text-accent transition-colors">About</a>
+                            <a href="/events" className="text-text-secondary hover:text-accent transition-colors">Events</a>
+                            <a href="/join" className="text-text-secondary hover:text-accent transition-colors">Join</a>
+                        </nav>
+                    </div>
+
+                    {/* Social Links */}
+                    <div>
+                        <h4 className="font-semibold text-foreground mb-4">Connect</h4>
+                        <div className="flex gap-4">
+                            {LINKS.map((link, i) => (
+                                <a
+                                    key={i}
+                                    href={link.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-accent hover:text-primary transition-colors text-2xl"
+                                    title={link.name}
+                                >
+                                    {link.icon}
+                                </a>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-                {/* Social Media Links */}
-                <div className="order-1 mb-4 flex flex-wrap justify-center gap-4 text-2xl text-black md:order-2 md:mb-0 md:flex-nowrap md:justify-end">
-                    {LINKS.map((link, i) => (
-                        <Link {...link} borderColour="yellow" key={i} />
-                    ))}
+
+                {/* Bottom section */}
+                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p className="text-text-secondary text-sm">
+                        &copy; {new Date().getFullYear()} Ignite Forum. All rights reserved.
+                    </p>
+                    <div className="flex gap-6 text-sm">
+                        <a href="/contact" className="text-text-secondary hover:text-accent transition-colors">Contact</a>
+                        <a href="#" className="text-text-secondary hover:text-accent transition-colors">Privacy</a>
+                    </div>
                 </div>
             </div>
         </footer>

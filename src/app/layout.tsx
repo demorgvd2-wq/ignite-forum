@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 // TODO: Meta tags
 
 export const viewport: Viewport = {
-    themeColor: '#252020',
+    themeColor: '#0B0E27',
 };
 
 const archivo = Archivo({
@@ -32,7 +32,7 @@ const archivo = Archivo({
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en" className={archivo.className}>
-            <body id="root" className="overflow-x-hidden bg-grey text-white">
+            <body id="root" className="overflow-x-hidden bg-background text-foreground antialiased">
                 <Notification />
                 <Header />
                 <div className="mx-auto min-h-screen w-responsive pb-6 pt-32 md:pt-40">

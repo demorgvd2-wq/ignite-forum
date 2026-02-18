@@ -3,6 +3,86 @@
 @tailwind utilities;
 
 @layer base {
+    /* Modern color system with CSS variables */
+    :root {
+        --background: #0B0E27;
+        --surface: #1A1F3A;
+        --surface-light: #252B48;
+        --foreground: #F9FAFB;
+        --text-secondary: #9CA3AF;
+        --primary: #00D9FF;
+        --primary-dark: #0099CC;
+        --secondary: #A78BFA;
+        --accent: #00D9FF;
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold tracking-tight;
+    }
+
+    h1 {
+        @apply text-4xl lg:text-5xl;
+    }
+
+    h2 {
+        @apply text-3xl lg:text-4xl;
+    }
+
+    h3 {
+        @apply text-2xl lg:text-3xl;
+    }
+
+    /* Subtle animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInUp {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes glow {
+        0%, 100% {
+            box-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+        }
+        50% {
+            box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .slide-in-up {
+        animation: slideInUp 0.6s ease-out;
+    }
+
+    .glow {
+        animation: glow 3s ease-in-out infinite;
+    }
+
     @media screen and (max-width: 400px) {
         html {
             font-size: 0.85em;
