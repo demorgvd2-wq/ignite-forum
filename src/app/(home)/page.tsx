@@ -37,18 +37,18 @@ export default async function HomePage() {
                         />
 
                         <div className="relative z-10">
-                            <h1 className="text-5xl lg:text-7xl 2xl:text-8xl">LEARN,</h1>
+                            <h1 className="text-5xl lg:text-7xl 2xl:text-8xl">INNOVATE,</h1>
                             <div className="h-2" />
-                            <h1 className="text-5xl lg:text-7xl 2xl:text-8xl">SOCIALISE,</h1>
+                            <h1 className="text-5xl lg:text-7xl 2xl:text-8xl">CONNECT,</h1>
                             <div className="h-2" />
 
                             <Title colour="yellow" font="font-black">
-                                CODE.
+                                EXCEL.
                             </Title>
                             <div className="h-4 md:h-8" />
                             <FancyRectangle colour="orange" offset="8" filled={false}>
                                 <div className="w-fit bg-orange px-2 py-2">
-                                    <h2 className="text-xl md:text-3xl">Computer Science Club</h2>
+                                    <h2 className="text-xl md:text-3xl">Ignite Forum</h2>
                                 </div>
                             </FancyRectangle>
                         </div>

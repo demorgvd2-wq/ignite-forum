@@ -12,11 +12,11 @@ const config: Config = {
         button: '4px 4px 0px 0px #000000',
       },
       colors: {
-        grey: '#252020',
-        white: '#F3F3EB',
-        orange: '#E1652B',
-        yellow: '#FCC018',
-        purple: '#7E7FE7',
+        grey: '#1F2937',
+        white: '#F9FAFB',
+        orange: '#FF6B35',
+        yellow: '#FFD60A',
+        purple: '#6366F1',
       },
       screens: {
         xs: '300px',
