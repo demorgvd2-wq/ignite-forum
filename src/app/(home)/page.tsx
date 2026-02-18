@@ -1,10 +1,13 @@
 import Duck from '@/components/Duck';
 import FancyRectangle from '@/components/FancyRectangle';
 import ImageCarousel from '@/components/ImageCarousel';
+import StatCard from '@/components/StatCard';
+import TestimonialCard from '@/components/TestimonialCard';
 import Title from '@/components/Title';
 import { fetchEvents, type Event } from '@/data/events';
 import { CAROUSEL_IMAGES } from '@/data/images';
 import { SPONSOR_TYPES, fetchSponsors } from '@/data/sponsors';
+import { TESTIMONIALS } from '@/data/testimonials';
 import { payloadURL } from '@/lib/payload';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -134,9 +137,8 @@ export default async function HomePage() {
 
             <hr className="mb-10 mt-16 h-0.5 bg-white"></hr>
 
-            {/* Club info cards */}
+            {/* What We Do Section */}
             <section>
-                {/* <Grid /> */}
                 <Image
                     src="/images/square-grid.svg"
                     alt="Square Grid"
@@ -145,23 +147,35 @@ export default async function HomePage() {
                     className="absolute -z-10 mt-12 w-0 max-w-[800px] lg:ml-36 lg:w-[50vw]"
                 />
 
-                <div className="mr-2 grid auto-rows-fr grid-cols-1 gap-8 text-xl lg:grid-cols-3">
+                <div className="relative z-10 mb-12 flex flex-row items-center text-3xl font-black md:text-4xl lg:text-5xl">
+                    <div>
+                        <h2>What We</h2>
+                        <div className="flex flex-col smr:flex-row">
+                            <h2 className="mb-2 mr-2 md:mb-0">Do</h2>
+                            <FancyRectangle colour="purple" offset="6" filled={false}>
+                                <div className="w-fit bg-purple px-2">
+                                    <h2 className="text-grey">Best</h2>
+                                </div>
+                            </FancyRectangle>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mr-2 grid auto-rows-fr grid-cols-1 gap-8 text-xl lg:grid-cols-2">
                     <FancyRectangle colour="white" offset="8" filled fullWidth fullHeight>
                         <div className="flex h-full flex-col">
                             <div className="w-full border-4 border-black bg-purple px-4 py-4 md:px-6 md:py-6">
-                                <h3 className="text-2xl font-black text-grey lg:text-3xl">Learn</h3>
+                                <h3 className="text-2xl font-black text-grey lg:text-3xl">Workshops & Talks</h3>
                             </div>
                             <div className="-mt-2 h-full w-fit border-4 border-black bg-white px-4 py-4 md:px-6 md:py-6">
                                 <div className="relative text-lg text-black md:text-xl">
                                     <p>
-                                        The club has a major focus on{' '}
+                                        We host{' '}
                                         <span className="relative inline-block">
-                                            education
+                                            expert-led workshops
                                             <span className="absolute left-0 top-0 h-full w-full bg-purple opacity-30"></span>
                                         </span>{' '}
-                                        and learning. We run workshops to assist students with their
-                                        studies and host other educational events such as talks and
-                                        guest lectures.
+                                        and tech talks covering cutting-edge technologies, development practices, and industry insights from professionals.
                                     </p>
                                 </div>
                             </div>
@@ -171,20 +185,18 @@ export default async function HomePage() {
                         <div className="flex h-full flex-col">
                             <div className="w-full border-4 border-black bg-yellow px-4 py-4 md:px-6 md:py-6">
                                 <h3 className="text-2xl font-black text-grey lg:text-3xl">
-                                    Socialise
+                                    Hackathons
                                 </h3>
                             </div>
                             <div className="-mt-2 h-full w-fit border-4 border-black bg-white px-4 py-4 md:px-6 md:py-6">
                                 <div className="relative text-lg text-black md:text-xl">
                                     <p>
-                                        We are primarily a{' '}
+                                        Compete in{' '}
                                         <span className="relative inline-block">
-                                            social club.
+                                            exciting hackathons
                                             <span className="absolute left-0 top-0 h-full w-full bg-yellow opacity-30"></span>
                                         </span>{' '}
-                                        Events such as meet & greets, games / movies nights, BBQs,
-                                        and pub crawls are just some of the social events the club
-                                        runs each year.
+                                        where you build innovative solutions, collaborate with teammates, and have the chance to win amazing prizes.
                                     </p>
                                 </div>
                             </div>
@@ -193,18 +205,36 @@ export default async function HomePage() {
                     <FancyRectangle colour="white" offset="8" filled fullWidth fullHeight>
                         <div className="flex h-full flex-col">
                             <div className="w-full border-4 border-black bg-orange px-4 py-4 md:px-6 md:py-6">
-                                <h3 className="text-2xl font-black text-grey lg:text-3xl">Code</h3>
+                                <h3 className="text-2xl font-black text-grey lg:text-3xl">Community</h3>
                             </div>
                             <div className="-mt-2 h-full w-fit border-4 border-black bg-white px-4 py-4 md:px-6 md:py-6">
                                 <div className="relative text-lg text-black md:text-xl">
                                     <p>
+                                        Join our{' '}
                                         <span className="relative inline-block">
-                                            Coding
+                                            vibrant community
                                             <span className="absolute left-0 top-0 h-full w-full bg-orange opacity-30"></span>
                                         </span>{' '}
-                                        is what we do and love. Whether you&apos;re looking for some
-                                        feedback on a project or have technical questions, the club
-                                        is a great way to meet and learn from others.
+                                        of passionate engineers and innovators. Network, collaborate, and grow together with peers who share your passion.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </FancyRectangle>
+                    <FancyRectangle colour="white" offset="8" filled fullWidth fullHeight>
+                        <div className="flex h-full flex-col">
+                            <div className="w-full border-4 border-black bg-white px-4 py-4 md:px-6 md:py-6">
+                                <h3 className="text-2xl font-black text-black lg:text-3xl">Competitions</h3>
+                            </div>
+                            <div className="-mt-2 h-full w-fit border-4 border-black bg-white px-4 py-4 md:px-6 md:py-6">
+                                <div className="relative text-lg text-black md:text-xl">
+                                    <p>
+                                        Participate in{' '}
+                                        <span className="relative inline-block">
+                                            coding competitions
+                                            <span className="absolute left-0 top-0 h-full w-full bg-purple opacity-30"></span>
+                                        </span>{' '}
+                                        and challenges that test your skills, push your boundaries, and help you grow as a developer.
                                     </p>
                                 </div>
                             </div>
@@ -212,6 +242,64 @@ export default async function HomePage() {
                     </FancyRectangle>
                 </div>
             </section>
+
+            <hr className="mb-10 mt-16 h-0.5 bg-white"></hr>
+
+            {/* Club Highlights Section */}
+            <section>
+                <div className="relative z-10 mb-12 flex flex-row items-center text-3xl font-black md:text-4xl lg:text-5xl">
+                    <div>
+                        <h2>Why Join</h2>
+                        <div className="flex flex-col smr:flex-row">
+                            <h2 className="mb-2 mr-2 md:mb-0">Ignite</h2>
+                            <FancyRectangle colour="yellow" offset="6" filled={false}>
+                                <div className="w-fit bg-yellow px-2">
+                                    <h2 className="text-grey">Forum</h2>
+                                </div>
+                            </FancyRectangle>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mr-2 grid auto-rows-fr grid-cols-2 gap-6 text-xl lg:grid-cols-4">
+                    <StatCard number={150} label="Active Members" colour="orange" />
+                    <StatCard number={25} label="Workshops Hosted" colour="purple" />
+                    <StatCard number={10} label="Major Projects" colour="yellow" />
+                    <StatCard number={5} label="Annual Hackathons" colour="white" />
+                </div>
+            </section>
+
+            <hr className="mb-10 mt-16 h-0.5 bg-white"></hr>
+
+            {/* Testimonials Section */}
+            <section>
+                <div className="relative z-10 mb-12 flex flex-row items-center text-3xl font-black md:text-4xl lg:text-5xl">
+                    <div>
+                        <h2>What Members</h2>
+                        <div className="flex flex-col smr:flex-row">
+                            <h2 className="mb-2 mr-2 md:mb-0">Say</h2>
+                            <FancyRectangle colour="orange" offset="6" filled={false}>
+                                <div className="w-fit bg-orange px-2">
+                                    <h2 className="text-grey">About Us</h2>
+                                </div>
+                            </FancyRectangle>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mr-2 grid auto-rows-fr grid-cols-1 gap-8 text-xl lg:grid-cols-2">
+                    {TESTIMONIALS.map((testimonial, index) => (
+                        <TestimonialCard
+                            key={index}
+                            quote={testimonial.quote}
+                            author={testimonial.author}
+                            role={testimonial.role}
+                            colour={['purple', 'yellow', 'orange', 'white'][index % 4] as any}
+                        />
+                    ))}
+                </div>
+            </section>
+
             {/* **** */}
 
             {/* Sponsors Section */}
