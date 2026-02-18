@@ -86,10 +86,10 @@ export default async function HomePage() {
                             </div>
                             <div className="relative z-10 mt-4 border-2 border-white bg-grey px-4 py-4 md:px-6 md:py-6">
                                 <p className="text-lg md:text-xl">
-                                    As a member, some of the perks you&apos;ll have access to
-                                    include computer science talks and workshops, catered social
-                                    events, and a wide network of other computer science students
-                                    and graduates to learn from and make friends with.
+                                    As a member, you'll have access to technical talks and workshops,
+                                    hackathons, coding competitions, networking with industry professionals,
+                                    and a vibrant community of engineers and tech enthusiasts passionate
+                                    about innovation.
                                 </p>
                             </div>
                         </div>
@@ -107,9 +107,10 @@ export default async function HomePage() {
                             </div>
                             <div className="relative z-10 mt-4 border-2 border-white bg-grey px-4 py-4 md:px-6 md:py-6">
                                 <p className="text-lg md:text-xl">
-                                    Are you a first year student? The Club runs activities at the
-                                    start of the year specifically for you, giving you a chance to
-                                    meet other students, and helping you ease into uni life.
+                                    New to St Vincent? Ignite Forum runs special introductory sessions
+                                    for first-year students to help you connect with peers, explore
+                                    exciting tech projects, and build lasting relationships in our
+                                    inclusive community.
                                 </p>
                             </div>
                         </div>

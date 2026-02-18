@@ -9,10 +9,10 @@ export default function Info({ className }: { className?: string }) {
             <Title colour="purple">Events</Title>
             <div className="space-y-4">
                 <p>
-                    The Computer Science Club is excited to be hosting a number of events throughout
-                    the year.
+                    Ignite Forum is excited to be hosting a variety of engaging events throughout the
+                    year, from technical workshops to hackathons and networking sessions.
                 </p>
-                <p>For further information, take a look at some of the events below!</p>
+                <p>Check out some of our upcoming events below and join our thriving community!</p>
             </div>
             <div className="mb-4 mr-4">
                 <FancyRectangle colour="white" offset="16" filled rounded>

@@ -61,27 +61,17 @@ export default function StepFive() {
                         <>
                             By submitting this form, you agree to abide by the{' '}
                             <a
-                                href="https://adelaideuni.edu.au/about/policies/student-code-of-conduct/"
+                                href="https://github.com/ignite-forum/Constitution"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-orange underline"
                             >
-                                University Code of Conduct
+                                Ignite Forum Guidelines and Code of Conduct
                             </a>{' '}
-                            and the{' '}
-                            <a
-                                href="https://github.com/compsci-adl/Constitution/blob/master/CS_Club_Constitution.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-orange underline"
-                            >
-                                Computer Science Club Constitution
-                            </a>
-                            . You acknowledge that failure to adhere to these rules may result in
-                            your membership being suspended or revoked following formal procedures
-                            outlined in the Constitution. You also acknowledge that services and
-                            events offered by the Club may change at any time upon our discretion
-                            without notice.
+                            . You acknowledge that failure to adhere to these guidelines may result
+                            in your membership being suspended or revoked. You also acknowledge that
+                            services and events offered by Ignite Forum may change at any time at our
+                            discretion without notice.
                         </>
                     }
                     value={agreement ? 'Yes' : 'No'}

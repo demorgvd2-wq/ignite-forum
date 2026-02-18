@@ -68,10 +68,11 @@ export default async function AboutPage() {
                                 height={30}
                             />
                             <p className="my-4 text-lg md:text-xl">
-                                The Adelaide University Computer Science Club is a student-run club
-                                for those with an interest in computer science or computing in
-                                general. Although we&apos;re a university club, we welcome anyone
-                                interested in computer science and/or socialising to join!
+                                Ignite Forum is a dynamic technical community at St Vincent College
+                                of Engineering and Technology, Nagpur. We bring together students
+                                passionate about coding, innovation, and technology. Whether you&apos;re
+                                a coding enthusiast, innovator, or simply curious about tech, you&apos;re
+                                welcome to join our vibrant community!
                             </p>
                         </div>
                     </div>
@@ -92,9 +93,9 @@ export default async function AboutPage() {
                             <Paragraph>
                                 <ul className="ml-6 list-disc">
                                     <li>
-                                        The{' '}
-                                        <span className="font-bold text-yellow">Duck Lounge</span>{' '}
-                                        (located at Engineering and Maths EM110)
+                                        Access to the{' '}
+                                        <span className="font-bold text-yellow">Ignite Hub</span>{' '}
+                                        (our dedicated community workspace)
                                     </li>
                                     <li>
                                         Frequent computer science talks on a diverse range of topics
@@ -155,11 +156,11 @@ export default async function AboutPage() {
                             height={30}
                         />
                         <p className="my-4 text-lg lg:text-xl">
-                            The club runs various competitions throughout the year, offering members
-                            a chance to have fun and win prizes. These have included programming and
-                            video game competitions. The club also coordinates projects among club
-                            members, allowing members to gain valuable experience working on team
-                            projects — while also having fun.
+                            Ignite Forum hosts coding challenges, hackathons, and tech competitions
+                            throughout the year, providing members the opportunity to showcase their
+                            skills and win exciting prizes. We also facilitate collaborative projects
+                            where members work in teams on real-world problems, gaining hands-on
+                            experience and building a portfolio of impactful work.
                         </p>
                     </div>
                     <div className="mr-2 flex justify-center lg:justify-end">
@@ -208,10 +209,11 @@ export default async function AboutPage() {
                     />
                     <div className="relative rounded-xl border-2 border-white bg-grey px-4 py-4 md:px-6 md:py-6">
                         <p className="text-lg md:text-xl">
-                            Founded in 2008 with a large and active group of members, we are always
-                            willing to offer academic assistance or make new friends. All are
-                            welcome to join us for an exciting year in a fun, open and unique
-                            environment.
+                            At Ignite Forum, we believe in empowering students to think innovatively,
+                            collaborate effectively, and build the future. With a passionate and active
+                            community, we provide mentorship, resources, and opportunities for everyone
+                            to excel. All are welcome to join us for an exciting journey of learning,
+                            building, and growing together.
                         </p>
                     </div>
                     <Image
@@ -286,20 +288,14 @@ export default async function AboutPage() {
                                 question={'How do I become a club member?'}
                                 answer={
                                     <p>
-                                        You can register as a club member on our website{' '}
+                                        You can register as a member on our website{' '}
                                         <a href="/join" className="underline">
                                             here
                                         </a>
-                                        . Create an account by filling in your information, then
-                                        complete the payment to finalise your membership.
-                                        <br />
-                                        <br />
-                                        <span className="font-bold">Note:</span> As AUSA is now
-                                        managing club memberships, we are currently waiting for
-                                        their new sign-up system to be finalised. You will be
-                                        required to register through their platform at a later date,
-                                        we want to assure you that all existing membership payments
-                                        for this year will be transferred over.
+                                        . Simply fill in your details and complete the registration
+                                        process. You&apos;ll then gain access to all member benefits,
+                                        exclusive events, and our community resources. It only takes
+                                        a few minutes!
                                     </p>
                                 }
                                 colour={'orange'}
@@ -309,10 +305,11 @@ export default async function AboutPage() {
                                 answer={
                                     <div>
                                         <p>
-                                            Members will have access to the Duck Lounge, a diverse
-                                            range of educational talks, workshops and resources,
-                                            social nights, and a wide network of other computer
-                                            science students and graduates.
+                                            Members enjoy access to the Ignite Hub, expert-led technical
+                                            talks and workshops, hackathons and coding competitions,
+                                            mentorship from experienced developers, networking opportunities
+                                            with industry professionals, and a supportive community of
+                                            passionate tech enthusiasts.
                                         </p>
                                     </div>
                                 }
@@ -322,64 +319,39 @@ export default async function AboutPage() {
                                 question={'How much does membership cost?'}
                                 answer={
                                     <p>
-                                        Club membership costs $10 for the full year. You can pay for
-                                        membership either online on our website, or in person at a
-                                        club event or the Duck Lounge by speaking to one of the
-                                        committee members.
-                                        <br />
-                                        <br />
-                                        <span className="font-bold">Note:</span> As AUSA is now
-                                        managing club memberships, we are currently waiting for
-                                        their new sign-up system to be finalised. You will be
-                                        required to register through their platform at a later date,
-                                        we want to assure you that all existing membership payments
-                                        for this year will be transferred over.
+                                        Membership is affordable and accessible to all. Details about
+                                        current membership fees can be found on our{' '}
+                                        <a href="/join" className="underline">
+                                            join page
+                                        </a>
+                                        . You can register online through our website, and payments can
+                                        be made securely during the registration process.
                                     </p>
                                 }
                                 colour={'purple'}
                             ></FAQ>
                             <FAQ
-                                question={'Where and what is the Duck Lounge?'}
+                                question={'What is the Ignite Hub?'}
                                 answer={
                                     <p>
-                                        The Duck Lounge is located at EM110 in the Engineering and
-                                        Maths building. It has a study space with power outlets and
-                                        couches, along with a Nintendo Switch for games. We also
-                                        sell snacks and drinks at affordable prices.
+                                        The Ignite Hub is our dedicated community workspace where members
+                                        can collaborate on projects, study together, attend workshops,
+                                        and connect with fellow enthusiasts. It&apos;s designed to foster
+                                        innovation and provide a welcoming space for all our members to
+                                        learn and grow together.
                                     </p>
                                 }
                                 colour={'orange'}
                             ></FAQ>
                             <FAQ
-                                question={'Does the club have a Facebook page?'}
+                                question={'How can I contact Ignite Forum?'}
                                 answer={
                                     <p>
-                                        Yes! We have a{' '}
-                                        <a
-                                            href={
-                                                LINKS.find((link) => link.name === 'Facebook')?.link
-                                            }
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="underline"
-                                        >
-                                            Facebook page
-                                        </a>{' '}
-                                        where we post all club events and general discussions.
-                                    </p>
-                                }
-                                colour={'yellow'}
-                            ></FAQ>
-                            <FAQ
-                                question={'How can I contact the CS Club?'}
-                                answer={
-                                    <p>
-                                        If you have any questions or just want to get in touch with
-                                        us, visit our{' '}
+                                        Have questions or want to get involved? Reach out to us on our{' '}
                                         <a href="/contact" className="underline">
                                             contact page
-                                        </a>{' '}
-                                        or send a message in our{' '}
+                                        </a>
+                                        , join our{' '}
                                         <a
                                             href={
                                                 LINKS.find((link) => link.name === 'Discord')?.link
@@ -388,9 +360,9 @@ export default async function AboutPage() {
                                             rel="noopener noreferrer"
                                             className="underline"
                                         >
-                                            Discord
+                                            Discord community
                                         </a>
-                                        .
+                                        , or follow us on social media for updates and announcements.
                                     </p>
                                 }
                                 colour={'purple'}

@@ -22,17 +22,17 @@ export default async function SponsorsPage() {
                 <Duck colour="yellow" size={80} className="hidden md:block" />
             </div>
             <div className="max-w-3xl border-x-4 border-white p-2 text-center text-lg md:p-5 md:text-2xl">
-                The <b>Adelaide University Computer Science Club</b> is proudly supported by our{' '}
-                <b>generous sponsors</b>. Their unwavering support make events and workshops
-                possible, fostering an environment for aspiring tech enthusiasts to excel within our
-                community.
+                <b>Ignite Forum</b> is proudly supported by our <b>generous sponsors</b>. Their
+                unwavering support enables us to host events, workshops, and competitions, creating
+                opportunities for students to learn, innovate, and excel in the tech community.
             </div>
             <Sponsors sponsors={sponsors} />
             <Paragraph>
-                If you&apos;d like to partner with us, please enquire at:{' '}
-                <a href="mailto:sponsorships@csclub.org.au" className="underline">
-                    sponsorships@csclub.org.au
+                If you&apos;d like to partner with Ignite Forum, please reach out to us on our{' '}
+                <a href="/contact" className="underline">
+                    contact page
                 </a>
+                .
             </Paragraph>
         </main>
     );

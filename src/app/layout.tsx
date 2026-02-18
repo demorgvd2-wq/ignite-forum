@@ -8,11 +8,11 @@ import { Archivo } from 'next/font/google';
 export const metadata: Metadata = {
     icons: '/favicon.ico',
     title: {
-        template: '%s | Computer Science Club',
-        default: 'Computer Science Club',
+        template: '%s | Ignite Forum',
+        default: 'Ignite Forum',
     },
     description:
-        'The University of Adelaide Computer Science Club is a student-run club for those with an interest in computer science or computing in general.',
+        'Ignite Forum is a student-run technical club at St Vincent College of Engineering and Technology, Nagpur. We unite students passionate about coding, innovation, and technology.',
 };
 
 // TODO: Add canonical URLs
